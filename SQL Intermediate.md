@@ -105,3 +105,28 @@ Having Count(Jobtitle) > 1
 - `Select FirstName + ' ' + Lastname AS FullName`
 
 ## Aliasing table names
+```SELECT Demo. EmployeeID, Sal.Salary
+FROM [SQLTutorial]. [dbo]. [EmployeeDemographics] AS Demo
+JOIN [SQLTutorial]. [dbo]. [EmployeeSalary] AS Sal
+ON Demo. EmployeeID = Sal. EmployeeID
+```
+
+## Partition By
+- Similar to group by
+- The group by statement is different in the sense that it will reduce the number of rows in our output by rolling them up and then calculating the sums or averages for each group whereas partition by actually divides the result set into paritions and changes how the window(?) function is calculated. 
+- So the partition by doesn't reduce the number of rows returned in our output. 
+```SELECT FirstName, LastName, Gender, Salary
+        , COUNT(Gender) OVER (PARTITION BY Gender) as TotalGender
+        FROM SQLTutorial. .EmployeeDemographics dem
+        JOIN SQLTutorial. .EmployeeSalary sal
+        ON dem. EmployeeID = sal.EmployeeID
+```
+VERSUS
+```
+SELECT Gender, COUNT(Gender)
+    FROM SQLTutorial. .EmployeeDemographics dem
+    JOIN SQLTutorial. .EmployeeSalary sal
+    ON dem.EmployeeID = sal.EmployeeID
+    GROUP BY Gender
+```
+Allows you to see the information you couldn't with group by. FirstName, Lastname (...) is accessibile now with the column that has had an aggregate function performed on it.
