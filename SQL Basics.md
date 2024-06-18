@@ -3,6 +3,12 @@ Using [SQl Server Management Studio (SMSS)](https://learn.microsoft.com/en-us/sq
 
 > New Database > SQLTutorial
 
+- Installing
+- Select
+- Where
+- Group By
+- Order By
+
 ### Creating Tables
 - Two ways to do this
   - New > Table

@@ -1,4 +1,11 @@
 # SQL - Intermediate 
+- Inner/Outer Joins
+- Unions
+- Case Statement
+- Having
+- Updating/Deleting
+- Aliasing
+- Partition By
 
 ## Joins
 ![Join-Visual](joins.png)
