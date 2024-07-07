@@ -36,4 +36,3 @@ You can drag and drop your dimensions/measures into your row and columns section
   ![alt text](images\image-6.png)
 - New Dashboard is an option available at the bottom. 
 - Change size to automatic
-- 
