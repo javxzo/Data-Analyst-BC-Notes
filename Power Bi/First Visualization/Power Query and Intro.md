@@ -21,6 +21,7 @@ Now we know where we are spending the least altogether, but is that the case for
 
 ![alt text](images/image-2.png)
 ![alt text](images/image-3.png)
+
 This panel will allow you to alter all the fine visual details of ur diagram - decimal points, titles, values...
 
 ![alt text](images/finalimage.png)
