@@ -6,6 +6,7 @@ df = pd.read_csv(r'path\to\world_population.csv')
 
 df[df['Rank'] ,= 10] # Will return all the countries that have a rank less than 10
 ```
+```
 specific_countries = ["Bangladesh", "Brazil"]
 df[df['Country'].isin(specific_countries)]
 ```
